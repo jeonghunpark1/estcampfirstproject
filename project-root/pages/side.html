@@ -1,81 +1,15 @@
-<!DOCTYPE html>
-<html lang="ko">
-
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>사이드 메뉴</title>
-
-  <!-- Bootstrap Icons만 사용 -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
-
-  <style>
-    body {
-      margin: 0;
-    }
-
-    .side-menu {
-      width: 80px;
-      height: 100vh;
-      background-color: #000;
-      color: white;
-      padding-top: 20px;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-    }
-
-    .menu-item {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      margin-bottom: 30px;
-      cursor: pointer;
-    }
-
-    .menu-item i {
-      font-size: 24px;
-      margin-bottom: 5px;
-    }
-
-    .menu-item img {
-      height: 24px;
-      margin-bottom: 5px;
-    }
-
-    .menu-item span {
-      font-size: 12px;
-    }
-  </style>
-</head>
-
-<body>
-
-  <div class="side-menu">
-    <!-- 햄버거 (고정) -->
-    <div class="menu-item">
-      <i class="bi bi-list" style="font-size: 30px;"></i>
-    </div>
-
-    <!-- 홈 -->
-    <div class="menu-item">
-      <img src="/assets/icons/home.png" alt="쇼츠" />
-      <span>홈</span>
-    </div>
-
-    <!-- 쇼츠 (이미지 아이콘) -->
-    <div class="menu-item">
-      <img src="/assets/logo/headlogo.png" alt="쇼츠" />
-      <span>쇼츠</span>
-    </div>
-
-    <!-- 구독 -->
-    <div class="menu-item">
-      <img src="/assets/icons/gudock.png" alt="쇼츠" />
-      <span>구독</span>
-    </div>
+<aside class="side-menu">
+  <div class="spacer"></div>
+  <div class="menu-item">
+    <img src="/assets/icons/home.png" alt="홈" />
+    <span>홈</span>
   </div>
-
-</body>
-
-</html>
+  <div class="menu-item">
+    <img src="/assets/logo/headlogo.png" alt="쇼츠" />
+    <span>쇼츠</span>
+  </div>
+  <div class="menu-item">
+    <img src="/assets/icons/gudock.png" alt="구독" />
+    <span>구독</span>
+  </div>
+</aside>

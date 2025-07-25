@@ -1,0 +1,56 @@
+header {
+  background-color: #202020;
+  padding: 10px 20px;
+  z-index: 1000; 
+  position: relative;
+
+
+}
+.logo img {
+  height: 40px;
+}
+.hamburger {
+  font-size: 30px;
+  color: white;
+}
+form.search-box {
+  display: flex;
+  align-items: center;
+  background: white;
+  border-radius: 50px;
+  overflow: hidden;
+  height: 40px;
+  width: 100%;
+  
+}
+form.search-box input {
+  border: none;
+  padding: 10px 15px;
+  flex: 1;
+  outline: none;
+}
+form.search-box button {
+  background: #ddd;
+  border: none;
+  padding: 0 15px;
+  height: 100%;
+}
+.mic-box button {
+  background: #ddd;
+  border: none;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.profile {
+  background: #ddd;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
