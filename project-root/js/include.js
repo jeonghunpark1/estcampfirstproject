@@ -2,7 +2,6 @@ import { initHeaderEvents } from "./head.js";
 import { initSidebarEvents } from "./side.js";
 
 document.addEventListener("DOMContentLoaded", () => {
-  // 1. header.html 불러오기
   fetch("/pages/components/header.html")
     .then(res => res.text())
     .then(html => {
