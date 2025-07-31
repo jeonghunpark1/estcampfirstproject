@@ -1,42 +1,39 @@
 <header>
-    <div class="row">
-      <div class="col-auto">
-        <div class="row align-items-center">
-          <div class="col-auto">
-            <i class="bi bi-list hamburger"></i>
-          </div>
-          <div class="col-auto">
-            <div class="logo">
-              <img src="/assets/logo/runlogo.png" alt="로고" />
-            </div>
-          </div>
+  <div class="row align-items-center">
+    <!-- 햄버거 + 로고 -->
+    <div class="col-auto">
+      <div class="row align-items-center">
+        <div class="col-auto">
+          <i class="bi bi-list hamburger"></i>
         </div>
-      </div>
-
-      <div class="col">
-        <div class="row">
-          <div class="col">
-            <form class="search-box" role="search">
-              <input type="text" id="searchInput" placeholder="검색어를 입력하세요" />
-              <button type="submit">
-                <i class="bi bi-search"></i>
-              </button>
-            </form>
+        <div class="col-auto">
+          <div class="logo">
+            <img src="/assets/logo/runlogo.png" alt="로고" />
           </div>
-          <div class="col-auto">
-            <div class="mic-box">
-              <button type="button" id="micBtn">
-                <i class="bi bi-mic"></i>
-              </button>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-auto">
-        <div class="profile">
-          <i class="bi bi-person"></i>
         </div>
       </div>
     </div>
-  </header>
+
+    <!-- 검색창 + 마이크 -->
+    <div class="col d-flex justify-content-center align-items-center">
+      <form class="d-flex search-box" role="search">
+        <input type="text" id="searchInput" placeholder="검색어를 입력하세요" />
+        <button type="submit" class="search-btn">
+          <i class="bi bi-search"></i>
+        </button>
+      </form>
+      <div class="mic-box ms-2">
+        <button type="button" id="micBtn">
+          <i class="bi bi-mic"></i>
+        </button>
+      </div>
+    </div>
+
+    <!-- 프로필 -->
+    <div class="col-auto">
+      <div class="profile">
+        <i class="bi bi-person"></i>
+      </div>
+    </div>
+  </div>
+</header>

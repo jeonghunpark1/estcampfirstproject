@@ -1,7 +1,7 @@
 /* ===== 사이드 메뉴 ===== */
 .side-menu {
   position: fixed;
-  top: 80px; /* 헤더 아래 시작 */
+  top: 80px; 
   left: 0;
   width: 80px;
   height: calc(100% - 80px);

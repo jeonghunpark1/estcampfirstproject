@@ -3,36 +3,57 @@ header {
   padding: 10px 20px;
   position: fixed;
   width: 100%;
+  z-index: 1000;
 }
+
 .logo img {
   height: 40px;
 }
+
 .hamburger {
   font-size: 30px;
   color: white;
 }
-form.search-box {
-  display: flex;
-  align-items: center;
+
+/* 검색창 */
+.search-box {
   background: white;
   border-radius: 50px;
   overflow: hidden;
   height: 40px;
   width: 100%;
-  
+  max-width: 800px;
+  align-items: center;
 }
-form.search-box input {
+
+.search-box input {
   border: none;
   padding: 10px 15px;
   flex: 1;
   outline: none;
+  font-size: 14px;
+  border-top-left-radius: 50px;
+  border-bottom-left-radius: 50px;
 }
-form.search-box button {
+
+.search-btn {
   background: #ddd;
   border: none;
   padding: 0 15px;
   height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-top-right-radius: 50px;
+  border-bottom-right-radius: 50px;
+  cursor: pointer;
 }
+
+/* 마이크 버튼 */
+.mic-box {
+  margin-left: 10px;
+}
+
 .mic-box button {
   background: #ddd;
   border: none;
@@ -42,7 +63,10 @@ form.search-box button {
   display: flex;
   align-items: center;
   justify-content: center;
+  cursor: pointer;
 }
+
+/* 프로필 버튼 */
 .profile {
   background: #ddd;
   border-radius: 50%;
@@ -51,4 +75,8 @@ form.search-box button {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.profile i {
+  color: black; /* 아이콘 색상 변경 */
 }
