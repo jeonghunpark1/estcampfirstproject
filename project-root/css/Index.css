@@ -1,0 +1,17 @@
+body {
+  background-color: #202020;
+  color: white;
+  margin: 0;
+  font-family: sans-serif;
+}
+
+.main-content {
+      padding-top: 50px;
+
+  margin-left: 0;
+  transition: margin-left 0.3s;
+}
+
+.main-content.shifted {
+  margin-left: 80px;
+}
