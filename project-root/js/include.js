@@ -1,4 +1,4 @@
-import { initHeaderEvents } from "./head.js";
+import { initHeaderEvents ,initProfileEvents} from "./head.js";
 import { initSidebarEvents } from "./side.js";
 import { loadVideoCards, loadShortsCards } from "./card.js";
 
@@ -11,7 +11,7 @@ document.addEventListener("DOMContentLoaded", async () => {
     const headerHTML = await fetch("/pages/components/header.html").then(res => res.text());
     headerEl.innerHTML = headerHTML;
     initHeaderEvents();
-
+    initProfileEvents();  
     const sideHTML = await fetch("/pages/components/side.html").then(res => res.text());
     sideEl.innerHTML = sideHTML;
     initSidebarEvents();

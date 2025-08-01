@@ -1,13 +1,12 @@
 body {
-  background-color: #202020;
-  color: white;
+  background-color: rgb(32, 32, 32);
+  color: rgb(255, 255, 255);
   margin: 0;
   font-family: sans-serif;
 }
 
 .main-content {
-      padding-top: 50px;
-
+  padding-top: 50px;
   margin-left: 0;
   transition: margin-left 0.3s;
 }

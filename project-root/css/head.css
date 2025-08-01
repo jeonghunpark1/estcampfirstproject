@@ -1,5 +1,5 @@
 header {
-  background-color: #202020;
+  background-color: rgb(29, 29, 29);
   padding: 10px 20px;
   position: fixed;
   width: 100%;
@@ -12,12 +12,12 @@ header {
 
 .hamburger {
   font-size: 30px;
-  color: white;
+  color: rgb(255, 255, 255);
 }
 
 /* 검색창 */
 .search-box {
-  background: white;
+  background: rgb(255, 255, 255);
   border-radius: 50px;
   overflow: hidden;
   height: 40px;
@@ -37,7 +37,7 @@ header {
 }
 
 .search-btn {
-  background: #ddd;
+  background: rgb(217, 217, 217);
   border: none;
   padding: 0 15px;
   height: 100%;
@@ -55,7 +55,7 @@ header {
 }
 
 .mic-box button {
-  background: #ddd;
+  background: rgb(217, 217, 217);
   border: none;
   border-radius: 50%;
   width: 40px;
@@ -68,7 +68,7 @@ header {
 
 /* 프로필 버튼 */
 .profile {
-  background: #ddd;
+  background: rgb(221, 221, 221);
   border-radius: 50%;
   width: 40px;
   height: 40px;
@@ -78,5 +78,72 @@ header {
 }
 
 .profile i {
-  color: black; /* 아이콘 색상 변경 */
+  color: rgb(0, 0, 0);
+}
+
+.profile-popup {
+  position: absolute;
+  top: 60px;
+  right: 20px;
+  width: 280px;
+  background-color: rgb(217, 217, 217);
+  color: rgb(51, 51, 51);
+  border-radius: 12px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
+  padding: 24px 20px;
+  z-index: 9999;
+  text-align: center;
+  font-family: sans-serif;
+}
+
+.profile-icon {
+  font-size: 60px;
+  border-radius: 100%;
+  border: 1px solid rgb(0, 0, 0);
+  color: rgb(86, 86, 86);
+  margin: auto;
+  margin-bottom: 10px;
+  width: 80px;
+  height: 80px;
+  display: block;
+}
+
+/* 정보 테이블 */
+.profile-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 24px;
+  font-size: 14px;
+}
+
+.profile-table th,
+.profile-table td {
+  border: 1px solid rgb(170, 170, 170);
+  padding: 10px;
+  text-align: left;
+}
+
+.profile-table th {
+  font-weight: bold;
+}
+
+.profile-table td {
+  color: rgb(136, 136, 136);
+  text-align: right;
+}
+
+/* 버튼 영역 */
+.profile-actions {
+  display: flex;
+  justify-content: space-around;
+  font-size: 14px;
+}
+
+.profile-actions button {
+  background: rgb(151, 65, 59);
+  border: 1px solid rgb(0, 0, 0);
+  color: rgb(0, 0, 0);
+  cursor: pointer;
+  border-radius: 10%;
+  padding: 5px 10px;
 }
