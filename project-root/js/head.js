@@ -21,3 +21,21 @@ export function initHeaderEvents() {
     });
   }
 }
+
+export function initProfileEvents() {
+  const profileBtn = document.querySelector(".profile");
+  const profilePopup = document.getElementById("profilePopup");
+
+  if (profileBtn && profilePopup) {
+    profileBtn.addEventListener("click", () => {
+      profilePopup.classList.toggle("d-none");
+    });
+
+    document.addEventListener("click", (e) => {
+      if (!profilePopup.contains(e.target) && !profileBtn.contains(e.target)) {
+        profilePopup.classList.add("d-none");
+      }
+    });
+  }
+}
+
