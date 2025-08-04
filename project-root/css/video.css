@@ -130,7 +130,6 @@ main {
   position: relative;
   top: 70px;
   overflow-y: auto;
-  background-color: rgba(0, 255, 255, 0.15); /* 시각 확인용 */
   border-radius: 8px;
   padding: 8px;
 }

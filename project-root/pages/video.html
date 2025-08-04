@@ -16,14 +16,12 @@
   <div id="header-container"></div>
   <div id="side-container"></div>
 
-<main class="main-content">
+  <main class="main-content">
     <!-- 영상 재생 및 댓글 -->
     <section class="video-player-section">
       <!-- 영상 -->
       <div class="video-frame">
-        <iframe src="https://www.youtube.com/embed/N0LzkAOGn04" title="YouTube video player" frameborder="0"
-          allowfullscreen>
-        </iframe>
+        <iframe id="video-frame" src="" title="YouTube video player" frameborder="0" allowfullscreen></iframe>
       </div>
 
       <!-- 채널 정보 + 구독 -->
@@ -32,8 +30,8 @@
           <div class="col channel-box">
             <i class="bi bi-person-circle channel-icon"></i>
             <div class="channel-info">
-              <div class="video-sub">채널명</div>
-              <div class="video-meta">조회수 1.2만회 · 2시간 전</div>
+              <div class="video-sub" id="channel-name">채널명</div>
+              <div class="video-meta" id="video-meta">조회수 · 업로드 시간</div>
             </div>
           </div>
           <div class="col-auto">
@@ -54,18 +52,8 @@
       </div>
 
       <!-- 설명란 -->
-      <div class="description-box">
-        설명
-        설명
-        설명
-        설명
-        설명
-        설명
-        설명
-        설명
-        설명
-        설명
-        설명
+      <div class="description-box" id="video-description">
+        영상 설명 영역입니다.
       </div>
 
       <!-- 댓글 -->
@@ -100,7 +88,6 @@
         </div>
       </template>
     </aside>
-
   </main>
 
   <script type="module" src="/js/include.js"></script>
