@@ -8,7 +8,7 @@ body {
 
 /* ===== 본문 영역 ===== */
 .main-content {
-  padding-top: 65px; /* header 높이 */
+  padding-top: 65px; 
   margin-left: 0;
   transition: margin-left 0.3s;
   padding-left: 20px;

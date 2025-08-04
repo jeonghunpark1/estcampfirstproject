@@ -1,18 +1,15 @@
 /* ===== 기본 설정 ===== */
 body {
-  background-color: #202020;
+  background-color: rgb(32, 32, 32);
   color: #fff;
   font-family: sans-serif;
-
 }
 
 main {
   display: flex;
   flex-direction: row;
-  padding:30px;
-
+  padding: 30px;
 }
-
 
 /* ===== 영상 영역 ===== */
 .video-player-section {
@@ -33,8 +30,7 @@ main {
   height: 100%;
 }
 
-
-/* ===== 영상 정보 영역 ===== */
+/* ===== 영상 정보 ===== */
 .video-info {
   margin-bottom: 16px;
 }
@@ -49,7 +45,6 @@ main {
   color: rgb(170, 170, 170);
 }
 
-
 /* ===== 구독 버튼 ===== */
 .subscribe-btn {
   background: none;
@@ -59,7 +54,6 @@ main {
   border-radius: 6px;
   cursor: pointer;
 }
-
 
 /* ===== 좋아요 / 싫어요 ===== */
 .like-box {
@@ -78,7 +72,6 @@ main {
   cursor: pointer;
 }
 
-
 /* ===== 설명란 ===== */
 .description-box {
   background-color: rgb(24, 24, 24);
@@ -87,8 +80,7 @@ main {
   margin-bottom: 24px;
 }
 
-
-/* ===== 댓글 입력 영역 ===== */
+/* ===== 댓글 ===== */
 .comment-section {
   margin-top: 24px;
 }
@@ -100,7 +92,7 @@ main {
 }
 
 .comment-input textarea {
-  background-color: #181818;
+  background-color: rgb(24, 24, 24);
   color: white;
   border: none;
   padding: 10px;
@@ -109,8 +101,6 @@ main {
   resize: none;
 }
 
-
-/* ===== 댓글 리스트 ===== */
 .comment {
   display: flex;
   gap: 10px;
@@ -125,8 +115,7 @@ main {
   font-size: 14px;
 }
 
-
-/* ===== 추천 영상 (오른쪽) ===== */
+/* ===== 추천 영상 ===== */
 .recommend-section {
   flex: 1.2;
   position: relative;
@@ -167,8 +156,7 @@ main {
   color: gray;
 }
 
-
-/* ===== 채널 정보 flex 구조 ===== */
+/* ===== 채널 정보 flex ===== */
 .channel-box {
   display: flex;
   align-items: center;
@@ -181,8 +169,7 @@ main {
   justify-content: center;
 }
 
-
-/* ===== 반응형 처리 ===== */
+/* ===== 반응형 ===== */
 @media screen and (max-width: 1024px) {
   .recommend-section {
     display: none;
@@ -195,5 +182,5 @@ main {
 }
 
 .main-content.shifted {
-  margin-left: 80px; /* 사이드메뉴 너비만큼 밀기 */
+  margin-left: 80px;
 }

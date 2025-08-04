@@ -1,6 +1,7 @@
 export function initHeaderEvents() {
   const micBtn = document.getElementById("micBtn");
   const searchInput = document.getElementById("searchInput");
+  const searchForm = document.querySelector(".search-box");
 
   const SpeechRecognition = window.SpeechRecognition || window.webkitSpeechRecognition;
 
@@ -18,6 +19,16 @@ export function initHeaderEvents() {
 
     recognition.addEventListener("error", (e) => {
       console.error("음성 인식 오류:", e);
+    });
+  }
+
+  // 🔍 검색 이벤트 등록
+  if (searchForm && searchInput) {
+    searchForm.addEventListener("submit", (e) => {
+      e.preventDefault();
+      const keyword = searchInput.value.trim().toLowerCase();
+      const event = new CustomEvent("searchKeyword", { detail: keyword });
+      document.dispatchEvent(event);
     });
   }
 }
@@ -38,4 +49,3 @@ export function initProfileEvents() {
     });
   }
 }
-

@@ -63,56 +63,105 @@
 
   // ==================== 추천 영상 동적 생성 ====================
 
-  document.addEventListener('DOMContentLoaded', () => {
-    const recommendSection = document.getElementById('recommend-section');
-    const template = document.getElementById('recommend-card-template');
+ document.addEventListener('DOMContentLoaded', () => {
+  const recommendSection = document.getElementById('recommend-section');
+  const template = document.getElementById('recommend-card-template');
 
-    const recommendations = [
-      {
-        videoId: "_piHYoqMJUs",
-        thumbnail: "https://i.ytimg.com/vi/_piHYoqMJUs/hqdefault.jpg",
-        title: "제목1",
-        channel: "채널1",
-        meta: "조회수 12만회 · 1주 전"
-      },
-      {
-        videoId: "0poey19dA0c",
-        thumbnail: "https://i.ytimg.com/vi/0poey19dA0c/hqdefault.jpg",
-        title: "제목2",
-        channel: "채널2",
-        meta: "조회수 8만회 · 3일 전"
-      },
-      {
-        videoId: "-Q5O71sOM_0",
-      thumbnail: "https://i.ytimg.com/vi/-Q5O71sOM_0/hqdefault.jpg",
-        title: "제목3",
-        channel: "채널3",
-        meta: "조회수 24만회 · 1개월 전"
-      }
-    ];
+  const recommendations = [
+    {
+      videoId: "ZmLXLRxs4BY",
+      thumbnail: "https://img.youtube.com/vi/ZmLXLRxs4BY/hqdefault.jpg",
+      title: "장꾸 유재석 런닝맨",
+      channel: "SBS",
+      meta: "조회수 10만회 · 1일 전"
+    },
+    {
+      videoId: "-xW4rko5Q-M",
+      thumbnail: "https://img.youtube.com/vi/-xW4rko5Q-M/hqdefault.jpg",
+      title: "구글 무료 자동화툴 출시?",
+      channel: "엉터리뚱땅땅",
+      meta: "조회수 20만회 · 2일 전"
+    },
+    {
+      videoId: "e0koWWAmXSk",
+      thumbnail: "https://img.youtube.com/vi/e0koWWAmXSk/hqdefault.jpg",
+      title: "도커 완전 기초",
+      channel: "애플코딩",
+      meta: "조회수 100만회 · 3일 전"
+    },
+    {
+      videoId: "0XL49OfTzrA",
+      thumbnail: "https://img.youtube.com/vi/0XL49OfTzrA/hqdefault.jpg",
+      title: "가만히 눈을 감아보아요",
+      channel: "음악최고",
+      meta: "조회수 200만회 · 1주 전"
+    },
+    {
+      videoId: "ehx994vl5j8",
+      thumbnail: "https://img.youtube.com/vi/ehx994vl5j8/hqdefault.jpg",
+      title: "윤아를 위한 악마들의 요리",
+      channel: "SBS",
+      meta: "조회수 4.1만회 · 1일 전"
+    },
+    {
+      videoId: "lYtm5pe2VXA",
+      thumbnail: "https://img.youtube.com/vi/lYtm5pe2VXA/hqdefault.jpg",
+      title: "24시간 꿀잼 vs 노잼",
+      channel: "파뿌리",
+      meta: "조회수 100만회 · 5일 전"
+    },
+    {
+      videoId: "9waYRes1ijg",
+      thumbnail: "https://img.youtube.com/vi/9waYRes1ijg/hqdefault.jpg",
+      title: "이승기의 노래",
+      channel: "이승기",
+      meta: "조회수 100만회 · 2주 전"
+    },
+    {
+      videoId: "CiLczg0Gx6U",
+      thumbnail: "https://img.youtube.com/vi/CiLczg0Gx6U/hqdefault.jpg",
+      title: "나한테만 그러는 이유",
+      channel: "공감쇼츠",
+      meta: "조회수 1만회 · 5일 전"
+    },
+    {
+      videoId: "Vr3ioORRrwM",
+      thumbnail: "https://img.youtube.com/vi/Vr3ioORRrwM/hqdefault.jpg",
+      title: "트럼프 소신 발언",
+      channel: "미국정치썰",
+      meta: "조회수 200만회 · 3시간 전"
+    },
+    {
+      videoId: "5gt8UodiSBY",
+      thumbnail: "https://img.youtube.com/vi/5gt8UodiSBY/hqdefault.jpg",
+      title: "미래에서 온 남편",
+      channel: "연애상담소",
+      meta: "조회수 20만회 · 1일 전"
+    }
+  ];
 
-    recommendations.forEach(video => {
-      const clone = template.content.cloneNode(true);
+  recommendations.forEach(video => {
+    const clone = template.content.cloneNode(true);
+    const card = clone.querySelector('.video-card');
 
-      const card = clone.querySelector('.video-card');
-      card.addEventListener('click', () => {
-        window.location.href = `/pages/video.html?videoId=${video.videoId}`;
-      });
-
-      card.querySelector('.recommend-thumbnail').src = video.thumbnail;
-      card.querySelector('.recommend-title').textContent = video.title;
-      card.querySelector('.recommend-channel').textContent = video.channel;
-      card.querySelector('.recommend-meta').textContent = video.meta;
-
-      recommendSection.appendChild(clone);
+    card.addEventListener('click', () => {
+      window.location.href = `/pages/video.html?videoId=${video.videoId}`;
     });
 
-    // ==================== videoId에 따라 iframe 동적 삽입 ====================
-    const urlParams = new URLSearchParams(window.location.search);
-    const videoId = urlParams.get("videoId");
-    const iframe = document.getElementById("video-frame");
+    card.querySelector('.recommend-thumbnail').src = video.thumbnail;
+    card.querySelector('.recommend-title').textContent = video.title;
+    card.querySelector('.recommend-channel').textContent = video.channel;
+    card.querySelector('.recommend-meta').textContent = video.meta;
 
-    if (videoId && iframe) {
-      iframe.src = `https://www.youtube.com/embed/${videoId}`;
-    }
+    recommendSection.appendChild(clone);
   });
+
+  // iframe 삽입
+  const urlParams = new URLSearchParams(window.location.search);
+  const videoId = urlParams.get("videoId");
+  const iframe = document.getElementById("video-frame");
+
+  if (videoId && iframe) {
+    iframe.src = `https://www.youtube.com/embed/${videoId}`;
+  }
+});
