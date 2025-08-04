@@ -1,0 +1,199 @@
+/* ===== 기본 설정 ===== */
+body {
+  background-color: #202020;
+  color: #fff;
+  font-family: sans-serif;
+
+}
+
+main {
+  display: flex;
+  flex-direction: row;
+  padding:30px;
+
+}
+
+
+/* ===== 영상 영역 ===== */
+.video-player-section {
+  flex: 3;
+  padding-right: 24px;
+}
+
+.video-frame {
+  height: 500px;
+  border-radius: 10px;
+  overflow: hidden;
+  margin-bottom: 16px;
+  margin-top: 70px;
+}
+
+.video-frame iframe {
+  width: 100%;
+  height: 100%;
+}
+
+
+/* ===== 영상 정보 영역 ===== */
+.video-info {
+  margin-bottom: 16px;
+}
+
+.video-sub {
+  font-size: 16px;
+  font-weight: bold;
+  color: white;
+}
+
+.video-info small {
+  color: rgb(170, 170, 170);
+}
+
+
+/* ===== 구독 버튼 ===== */
+.subscribe-btn {
+  background: none;
+  border: 1px solid #888;
+  color: white;
+  padding: 6px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+
+/* ===== 좋아요 / 싫어요 ===== */
+.like-box {
+  margin-top: 8px;
+  display: flex;
+  justify-content: flex-end;
+  gap: 8px;
+}
+
+.like-btn {
+  background: none;
+  border: 1px solid #444;
+  color: white;
+  padding: 6px 10px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+
+/* ===== 설명란 ===== */
+.description-box {
+  background-color: rgb(24, 24, 24);
+  padding: 12px;
+  border-radius: 8px;
+  margin-bottom: 24px;
+}
+
+
+/* ===== 댓글 입력 영역 ===== */
+.comment-section {
+  margin-top: 24px;
+}
+
+.comment-input {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 16px;
+}
+
+.comment-input textarea {
+  background-color: #181818;
+  color: white;
+  border: none;
+  padding: 10px;
+  flex: 1;
+  border-radius: 6px;
+  resize: none;
+}
+
+
+/* ===== 댓글 리스트 ===== */
+.comment {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 16px;
+}
+
+.comment-icon {
+  font-size: 24px;
+}
+
+.comment-content {
+  font-size: 14px;
+}
+
+
+/* ===== 추천 영상 (오른쪽) ===== */
+.recommend-section {
+  flex: 1.2;
+  position: relative;
+  top: 70px;
+  overflow-y: auto;
+  border-radius: 8px;
+  padding: 8px;
+}
+
+.video-card {
+  display: flex;
+  margin-bottom: 16px;
+  gap: 10px;
+  cursor: pointer;
+}
+
+.recommend-thumbnail {
+  width: 168px;
+  height: 94px;
+  border-radius: 6px;
+}
+
+.recommend-text {
+  flex: 1;
+}
+
+.recommend-title {
+  margin: 0;
+  font-size: 14px;
+  font-weight: bold;
+  color: white;
+}
+
+.recommend-channel,
+.recommend-meta {
+  margin: 2px 0;
+  font-size: 12px;
+  color: gray;
+}
+
+
+/* ===== 채널 정보 flex 구조 ===== */
+.channel-box {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.channel-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+
+/* ===== 반응형 처리 ===== */
+@media screen and (max-width: 1024px) {
+  .recommend-section {
+    display: none;
+  }
+}
+
+.main-content {
+  margin-left: 0;
+  transition: margin-left 0.3s ease;
+}
+
+.main-content.shifted {
+  margin-left: 80px; /* 사이드메뉴 너비만큼 밀기 */
+}

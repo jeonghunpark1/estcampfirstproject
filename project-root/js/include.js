@@ -16,7 +16,6 @@ document.addEventListener("DOMContentLoaded", async () => {
     sideEl.innerHTML = sideHTML;
     initSidebarEvents();
 
-    // 👉 card-container가 있는 경우만 카드 관련 컴포넌트 로딩
     if (cardEl) {
       const cardHTML = await fetch("/pages/components/card.html").then(res => res.text());
       cardEl.innerHTML = cardHTML;

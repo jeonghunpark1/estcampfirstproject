@@ -6,6 +6,14 @@ header {
   z-index: 1000;
 }
 
+/* row 높이 정렬 */
+.header-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* logo */
 .logo img {
   height: 40px;
 }
@@ -15,7 +23,14 @@ header {
   color: rgb(255, 255, 255);
 }
 
-/* 검색창 */
+/* 검색 영역 */
+.search-col {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
 .search-box {
   background: rgb(255, 255, 255);
   border-radius: 50px;
@@ -23,6 +38,7 @@ header {
   height: 40px;
   width: 100%;
   max-width: 800px;
+  display: flex;
   align-items: center;
 }
 
@@ -50,10 +66,6 @@ header {
 }
 
 /* 마이크 버튼 */
-.mic-box {
-  margin-left: 10px;
-}
-
 .mic-box button {
   background: rgb(217, 217, 217);
   border: none;
@@ -66,7 +78,7 @@ header {
   cursor: pointer;
 }
 
-/* 프로필 버튼 */
+/* 프로필 */
 .profile {
   background: rgb(221, 221, 221);
   border-radius: 50%;
@@ -81,6 +93,7 @@ header {
   color: rgb(0, 0, 0);
 }
 
+/* 팝업 */
 .profile-popup {
   position: absolute;
   top: 60px;
@@ -123,16 +136,12 @@ header {
   text-align: left;
 }
 
-.profile-table th {
-  font-weight: bold;
-}
-
 .profile-table td {
   color: rgb(136, 136, 136);
   text-align: right;
 }
 
-/* 버튼 영역 */
+/* 버튼 */
 .profile-actions {
   display: flex;
   justify-content: space-around;

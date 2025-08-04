@@ -1,8 +1,8 @@
 <header>
-  <div class="row align-items-center">
-    <!-- 햄버거 + 로고 -->
+  <div class="row header-row">
+    <!-- 좌측: 햄버거 + 로고 -->
     <div class="col-auto">
-      <div class="row align-items-center">
+      <div class="row align-middle">
         <div class="col-auto">
           <i class="bi bi-list hamburger"></i>
         </div>
@@ -16,45 +16,38 @@
       </div>
     </div>
 
-    <!-- 검색창 + 마이크 -->
-    <div class="col d-flex justify-content-center align-items-center">
-      <form class="d-flex search-box" role="search">
+    <!-- 가운데: 검색창 + 마이크 -->
+    <div class="col search-col">
+      <form class="search-box" role="search">
         <input type="text" id="searchInput" placeholder="검색어를 입력하세요" />
         <button type="submit" class="search-btn">
           <i class="bi bi-search"></i>
         </button>
       </form>
-      <div class="mic-box ms-2">
+      <div class="mic-box">
         <button type="button" id="micBtn">
           <i class="bi bi-mic"></i>
         </button>
       </div>
     </div>
 
-    <!-- 프로필 -->
+    <!-- 우측: 프로필 -->
     <div class="col-auto">
       <div class="profile">
         <i class="bi bi-person"></i>
       </div>
     </div>
+
+    <!-- 프로필 팝업 -->
     <div id="profilePopup" class="profile-popup d-none">
       <div class="profile-icon">
         <i class="bi bi-person"></i>
       </div>
 
       <table class="profile-table">
-        <tr>
-          <th>닉네임</th>
-          <td>royal</td>
-        </tr>
-        <tr>
-          <th>이름</th>
-          <td>박정훈</td>
-        </tr>
-        <tr>
-          <th>이메일</th>
-          <td>p500wh@naver.com</td>
-        </tr>
+        <tr><th>닉네임</th><td>royal</td></tr>
+        <tr><th>이름</th><td>박정훈</td></tr>
+        <tr><th>이메일</th><td>p500wh@naver.com</td></tr>
       </table>
 
       <div class="profile-actions">
@@ -62,7 +55,5 @@
         <button>회원탈퇴</button>
       </div>
     </div>
-
-
   </div>
 </header>

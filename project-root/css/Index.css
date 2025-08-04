@@ -1,3 +1,4 @@
+/* ===== 전체 바디 ===== */
 body {
   background-color: rgb(32, 32, 32);
   color: rgb(255, 255, 255);
@@ -5,12 +6,16 @@ body {
   font-family: sans-serif;
 }
 
+/* ===== 본문 영역 ===== */
 .main-content {
-  padding-top: 50px;
+  padding-top: 65px; /* header 높이 */
   margin-left: 0;
   transition: margin-left 0.3s;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
+/* 사이드 열렸을 때 본문 이동 */
 .main-content.shifted {
   margin-left: 80px;
 }
