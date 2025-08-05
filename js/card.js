@@ -10,7 +10,7 @@ let videoDataList = [
   {
     videoId: "-xW4rko5Q-M",
     title: "구글 무료 자동화툴 출시?",
-    channelIcon: "../assets/icons/gudock.png",
+    channelIcon: "./assets/icons/gudock.png",
     channelName: "엉터리뚱땅땅",
     views: "20만",
     uploaded: "1일 전"
@@ -18,7 +18,7 @@ let videoDataList = [
   {
     videoId: "e0koWWAmXSk",
     title: "docker",
-    channelIcon: "../assets/icons/gudock.png",
+    channelIcon: "./assets/icons/gudock.png",
     channelName: "애플코딩",
     views: "100만",
     uploaded: "1일 전"
@@ -26,7 +26,7 @@ let videoDataList = [
   {
     videoId: "0XL49OfTzrA",
     title: "가만히 눈을 감아보아요",
-    channelIcon: "../assets/icons/gudock.png",
+    channelIcon: "./assets/icons/gudock.png",
     channelName: "음악최고",
     views: "200만",
     uploaded: "1일 전"
@@ -34,7 +34,7 @@ let videoDataList = [
   {
     videoId: "ehx994vl5j8",
     title: "윤아를 위한 악마들의 요리",
-    channelIcon: "../assets/icons/gudock.png",
+    channelIcon: "./assets/icons/gudock.png",
     channelName: "SBS",
     views: "4.1만",
     uploaded: "1일 전"
@@ -42,7 +42,7 @@ let videoDataList = [
   {
     videoId: "lYtm5pe2VXA",
     title: "24시간동안 꿀잼과 노잼",
-    channelIcon: "../assets/icons/gudock.png",
+    channelIcon: "./assets/icons/gudock.png",
     channelName: "파뿌리",
     views: "100만",
     uploaded: "1일 전"
@@ -50,7 +50,7 @@ let videoDataList = [
   {
     videoId: "lYtm5pe2VXA",
     title: "이찬원의 자작곡 라이브",
-    channelIcon: "../assets/icons/gudock.png",
+    channelIcon: "./assets/icons/gudock.png",
     channelName: "케네스틱",
     views: "300만",
     uploaded: "1일 전"
@@ -58,7 +58,7 @@ let videoDataList = [
   {
     videoId: "9waYRes1ijg",
     title: "이승기의 노래",
-    channelIcon: "../assets/icons/gudock.png",
+    channelIcon: "./assets/icons/gudock.png",
     channelName: "이승기",
     views: "100만",
     uploaded: "1일 전"
