@@ -99,7 +99,7 @@ function renderFilteredCards(data) {
     card.querySelector(".video-meta").textContent = `${video.views} · ${video.uploaded}`;
 
     card.querySelector(".video-card").addEventListener("click", () => {
-      window.location.href = `.pages/video.html?videoId=${video.videoId}`;
+      window.location.href = `/estcampfirstproject/pages/video.html?videoId=${video.videoId}`;
     });
 
     videoGrid.appendChild(card);
