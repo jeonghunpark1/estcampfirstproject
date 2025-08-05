@@ -5,7 +5,7 @@ export function loadSubscribeCards() {
   const subscribeVideoList = [
     {
       videoId: "ZmLXLRxs4BY",
-      channelIcon: "../assets/icons/gudock.png",
+      channelIcon: "./assets/icons/gudock.png",
       duration: "12:34",
       title: "장꾸 유재석 런닝맨",
       channelName: "SBS",
@@ -15,7 +15,7 @@ export function loadSubscribeCards() {
     },
     {
       videoId: "-xW4rko5Q-M",
-      channelIcon: "../assets/icons/gudock.png",
+      channelIcon: "./assets/icons/gudock.png",
       duration: "8:51",
       title: "구글 무료 자동화툴 출시?",
       channelName: "엉터리뚱땅땅",
@@ -25,7 +25,7 @@ export function loadSubscribeCards() {
     },
     {
       videoId: "e0koWWAmXSk",
-      channelIcon: "../assets/icons/gudock.png",
+      channelIcon: "./assets/icons/gudock.png",
       duration: "15:03",
       title: "도커 완전 기초",
       channelName: "애플코딩",
@@ -49,7 +49,7 @@ export function loadSubscribeCards() {
     card.querySelector(".video-description").textContent = video.description;
 
     card.querySelector(".subscribe-video-card").addEventListener("click", () => {
-      window.location.href = `../pages/video.html?videoId=${video.videoId}`;
+      window.location.href = `./pages/video.html?videoId=${video.videoId}`;
     });
 
     subscribeGrid.appendChild(card);

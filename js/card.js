@@ -2,7 +2,7 @@ let videoDataList = [
   {
     videoId: "ZmLXLRxs4BY",
     title: "장꾸 유재석 런닝맨",
-    channelIcon: "../assets/icons/gudock.png",
+    channelIcon: "./assets/icons/gudock.png",
     channelName: "SBS",
     views: "10만",
     uploaded: "1일 전"
@@ -99,7 +99,7 @@ function renderFilteredCards(data) {
     card.querySelector(".video-meta").textContent = `${video.views} · ${video.uploaded}`;
 
     card.querySelector(".video-card").addEventListener("click", () => {
-      window.location.href = `/pages/video.html?videoId=${video.videoId}`;
+      window.location.href = `./pages/video.html?videoId=${video.videoId}`;
     });
 
     videoGrid.appendChild(card);
