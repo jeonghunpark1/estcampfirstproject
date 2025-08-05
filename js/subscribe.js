@@ -2,10 +2,13 @@ export function loadSubscribeCards() {
   const subscribeGrid = document.getElementById("subscribe-grid");
   const template = document.getElementById("subscribe-video-template");
 
+  // 절대경로 기준 base 설정
+  const base = "/estcampfirstproject";
+
   const subscribeVideoList = [
     {
       videoId: "ZmLXLRxs4BY",
-      channelIcon: "./assets/icons/gudock.png",
+      channelIcon: `${base}/assets/icons/gudock.png`,
       duration: "12:34",
       title: "장꾸 유재석 런닝맨",
       channelName: "SBS",
@@ -15,7 +18,7 @@ export function loadSubscribeCards() {
     },
     {
       videoId: "-xW4rko5Q-M",
-      channelIcon: "./assets/icons/gudock.png",
+      channelIcon: `${base}/assets/icons/gudock.png`,
       duration: "8:51",
       title: "구글 무료 자동화툴 출시?",
       channelName: "엉터리뚱땅땅",
@@ -25,7 +28,7 @@ export function loadSubscribeCards() {
     },
     {
       videoId: "e0koWWAmXSk",
-      channelIcon: "./assets/icons/gudock.png",
+      channelIcon: `${base}/assets/icons/gudock.png`,
       duration: "15:03",
       title: "도커 완전 기초",
       channelName: "애플코딩",
@@ -43,13 +46,13 @@ export function loadSubscribeCards() {
     card.querySelector(".thumbnail").src = thumbnailUrl;
     card.querySelector(".video-duration").textContent = video.duration;
     card.querySelector(".video-title").textContent = video.title;
-    card.querySelector(".channel-name").textContent = video.channelName;
+    card.querySelectorAll(".channel-name").forEach(el => el.textContent = video.channelName);
     card.querySelector(".view-count").textContent = video.views;
     card.querySelector(".upload-time").textContent = video.time;
     card.querySelector(".video-description").textContent = video.description;
 
     card.querySelector(".subscribe-video-card").addEventListener("click", () => {
-      window.location.href = `./pages/video.html?videoId=${video.videoId}`;
+      window.location.href = `${base}/pages/video.html?videoId=${video.videoId}`;
     });
 
     subscribeGrid.appendChild(card);
