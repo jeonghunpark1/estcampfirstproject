@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="93d2b34b-21f9-4277-9e8f-3090987a7cb8" name="변경" comment="Feat: 유튜브 home 페이지&#10;- 홈 클릭시 상단 리로드&#10;- 검색 창 및 마이크 위치 조정" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+    <option name="RESET_MODE" value="HARD" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN",
+    "assignee": "jeonghunpark1"
+  }
+}]]></component>
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/jeonghunpark1/estcampfirstproject.git",
+    "accountId": "70c8dfe9-a6b5-4cd4-92d7-437217b6363b"
+  },
+  "recentNewPullRequestHead": {
+    "server": {
+      "useHttp": false,
+      "host": "github.com",
+      "port": null,
+      "suffix": null
+    },
+    "owner": "jeonghunpark1",
+    "repository": "estcampfirstproject"
+  }
+}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 4
+}</component>
+  <component name="ProjectId" id="30DpWqMZW4qA9HRVeXbJWiLDyfp" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "dart.analysis.tool.window.visible": "false",
+    "git-widget-placeholder": "main",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "/Users/parkjeonghun/project/estcampfirstproject/project-root",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-jdk-9823dce3aa75-a94e463ab2e7-intellij.indexing.shared.core-IU-243.26574.91" />
+        <option value="bundled-js-predefined-d6986cc7102b-1632447f56bf-JavaScript-IU-243.26574.91" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="애플리케이션 수준" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="디폴트 작업">
+      <changelist id="93d2b34b-21f9-4277-9e8f-3090987a7cb8" name="변경" comment="" />
+      <created>1753172031346</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1753172031346</updated>
+      <workItem from="1753172032655" duration="513000" />
+      <workItem from="1753853852790" duration="26027000" />
+    </task>
+    <task id="LOCAL-00001" summary="Feat: 유튜브 메인 페이지&#10;- 사이드 바 클릭시 메인 영역도 밀려남&#10;- 헤더 고정&#10;- html로 비디오 카드를 만들고 js를 통해 동적으로 페이지를 만들었다.">
+      <option name="closed" value="true" />
+      <created>1753853979102</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1753853979102</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Feat: 유튜브 home 페이지&#10;- 홈 클릭시 상단 리로드&#10;- 검색 창 및 마이크 위치 조정">
+      <option name="closed" value="true" />
+      <created>1753942496357</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1753942496357</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Feat: 유튜브 메인 페이지&#10;- 사이드 바 클릭시 메인 영역도 밀려남&#10;- 헤더 고정&#10;- html로 비디오 카드를 만들고 js를 통해 동적으로 페이지를 만들었다." />
+    <MESSAGE value="Feat: 유튜브 home 페이지&#10;- 홈 클릭시 상단 리로드&#10;- 검색 창 및 마이크 위치 조정" />
+    <option name="LAST_COMMIT_MESSAGE" value="Feat: 유튜브 home 페이지&#10;- 홈 클릭시 상단 리로드&#10;- 검색 창 및 마이크 위치 조정" />
+  </component>
+</project>
