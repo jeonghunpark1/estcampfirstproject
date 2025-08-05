@@ -145,7 +145,7 @@
     const card = clone.querySelector('.video-card');
 
     card.addEventListener('click', () => {
-      window.location.href = `./video.html?videoId=${video.videoId}`;
+      window.location.href = `.pages/video.html?videoId=${video.videoId}`;
     });
 
     card.querySelector('.recommend-thumbnail').src = video.thumbnail;
