@@ -145,8 +145,9 @@
     const card = clone.querySelector('.video-card');
 
     card.addEventListener('click', () => {
-      window.location.href = `./pages/video.html?videoId=${video.videoId}`;
+      window.location.href = `/estcampfirstproject/pages/video.html?videoId=${video.videoId}`;
     });
+
 
     card.querySelector('.recommend-thumbnail').src = video.thumbnail;
     card.querySelector('.recommend-title').textContent = video.title;
