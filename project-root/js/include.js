@@ -8,16 +8,16 @@ document.addEventListener("DOMContentLoaded", async () => {
   const cardEl = document.getElementById("card-container");
 
   try {
-    const headerHTML = await fetch("/pages/components/header.html").then(res => res.text());
+    const headerHTML = await fetch("./pages/components/header.html").then(res => res.text());
     headerEl.innerHTML = headerHTML;
     initHeaderEvents();
     initProfileEvents();  
-    const sideHTML = await fetch("/pages/components/side.html").then(res => res.text());
+    const sideHTML = await fetch("./pages/components/side.html").then(res => res.text());
     sideEl.innerHTML = sideHTML;
     initSidebarEvents();
 
     if (cardEl) {
-      const cardHTML = await fetch("/pages/components/card.html").then(res => res.text());
+      const cardHTML = await fetch("./pages/components/card.html").then(res => res.text());
       cardEl.innerHTML = cardHTML;
       loadVideoCards();
       loadShortsCards();
